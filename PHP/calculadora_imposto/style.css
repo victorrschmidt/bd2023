@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+textarea:focus, input:focus { outline: none; }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 100.0vw;
+    min-height: 100.0vh;
+    text-align: center;
+}
+form {
+    background-color: #41A24D;
+    outline: black solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.6rem;
+    width: 620px;
+    height: 300px;
+    border-radius: 12px;
+    padding: 1.0rem 1.0rem 0;
+}
+#salario-desc {
+    color: white;
+    font-size: 2.0rem;
+}
+#salario {
+    width: 75.0%;
+    height: 16.0%;
+    padding-left: 0.6rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+#confirmar {
+    background-color: #2D7035;
+    color: white;
+    width: 35.0%;
+    height: 16.0%;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+table {
+    background-color: #A8F0B0;
+    border-collapse: collapse;
+}
+#imposto {
+    width: 500px;
+}
+#total {
+    width: 300px;
+}
+caption {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+}
+tr {
+    height: 50px;
+}
+tr:nth-child(2n) {
+    background-color: #41A24D;
+}
+tr > * {
+    border: solid black 2px;
+}
+.bold {
+    font-weight: bold;
+}
