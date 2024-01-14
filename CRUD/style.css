@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans Osmanya', sans-serif;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+a { 
+    color: #007BFF;
+    text-decoration: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+a:hover, a.link-active {
+    color: #0A58CA;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Ícones do Google */
+.material-symbols-outlined {
+    user-select: none;
+}
+#avatar-icon {
+    font-size: 3.0rem;
+    margin-right: 5px;
+}
+.header-icon {
+    margin-right: 3px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Common */
+.grey {
+    background-color: #F0F0F0;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Login */
+#main-login{
+    max-width: 320px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Criar conta */
+#main-conta {
+    max-width: 340px;
+}
+.verif-aceito {
+    color: #198754;
+}
+.verif-negado {
+    color: #DC3545;
+}
+.verif-aceito::before {
+    position: relative;
+    left: -5px;
+    content: "✔";
+}
+.verif-negado::before {
+    position: relative;
+    left: -5px;
+    content: "✖";
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Header (logado) */
+#header-left-content {
+    display: flex;
+    flex-direction: row;
+    width: 20.0%;
+}
+#header-right-content-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100.0%;
+    padding-left: 80px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Ordenação */
+#form-ordem {
+    max-width: 320px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Inserir livros */
+#form-inserir,
+#form-atualizar {
+    max-width: 520px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* Media queries */
+@media only screen and (max-width: 991px) {
+    #header-left-content {
+        width: 80.0%;
+    }
+    #header-right-content-list {
+        flex-direction: column;
+        align-items: left;
+        gap: 18px;
+        margin-top: 20px;
+    }
+}
